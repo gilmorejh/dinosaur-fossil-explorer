@@ -15,11 +15,7 @@ BEGIN
 		accepted_rank VARCHAR(50) NULL,
 		accepted_no VARCHAR(50) NULL,
 		taxon_environment VARCHAR(50) NULL,
-		phylum VARCHAR(50) NULL,
-		class VARCHAR(50) NULL,
-		[order] VARCHAR(50) NULL,
-		family VARCHAR(50) NULL,
-		genus VARCHAR(50) NULL,
+		
 
 		-- Geological Time
 		early_interval VARCHAR(50) NULL,
@@ -27,10 +23,17 @@ BEGIN
 		max_ma DECIMAL(10,4) NULL,
 		min_ma DECIMAL(10,4) NULL,
 
+		-- Taxonomy (cont)
+		phylum VARCHAR(50) NULL,
+		class VARCHAR(50) NULL,
+		[order] VARCHAR(50) NULL,
+		family VARCHAR(50) NULL,
+		genus VARCHAR(50) NULL,
+
 		-- Geography
 		cc VARCHAR(5) NULL,
 		[state] VARCHAR(50) NULL,
-		country VARCHAR(50) NULL,
+		county VARCHAR(50) NULL,
 		lat DECIMAL(9,6) NULL,
 		lng DECIMAL(9,6) NULL,
 		latlng_basis VARCHAR(50) NULL,
